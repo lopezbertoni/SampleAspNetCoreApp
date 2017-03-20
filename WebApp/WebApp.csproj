@@ -19,5 +19,11 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\App_Data\Jobs\Continuous\SampleWebJob\" />
+  </ItemGroup>
 
+  <Target Name="PostpublishScript" AfterTargets="Publish">
+    <Exec Command="dotnet publish ..\SampleWebJob\ -o $(ProjectDir)obj\$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\PubTmp\Out\App_Data\Jobs\Continuous\SampleWebJob" />
+  </Target>
 </Project>
