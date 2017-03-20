@@ -1,2 +1,2 @@
 @echo off
-SampleWebJob.dll
+dotnet SampleWebJob.dll
