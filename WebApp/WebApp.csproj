@@ -21,6 +21,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\App_Data\Jobs\Continuous\SampleWebJob\" />
+    <Folder Include="wwwroot\App_Data\Jobs\Continuous\SampleWebJob\" />
   </ItemGroup>
 
   <Target Name="PostpublishScript" AfterTargets="Publish">
